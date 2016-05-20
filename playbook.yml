@@ -1,0 +1,2 @@
+tasks:
+	copy: src=/target/petclinic.war dest=/target/newwar.war owner=foo group=foo mode=0644
