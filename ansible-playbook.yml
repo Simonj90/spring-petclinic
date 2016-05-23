@@ -1,4 +1,6 @@
 - hosts: tomcat
   tasks:
     - name: copy war
-      synchronize: src=target/petclinic.war dest=/tmp/newwar.war
+      become: yes
+      become_user: tomcat7
+      synchronize: src=target/petclinic.war dest=/var/lib/tomcat7/webapps/petclinic.war
