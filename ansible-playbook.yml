@@ -1,5 +1,4 @@
 - hosts: tomcat
   tasks:
     - name: copy war
-      #shell: echo "${PWD##*/}"
       synchronize: src=target/petclinic.war dest=/tmp/newwar.war
